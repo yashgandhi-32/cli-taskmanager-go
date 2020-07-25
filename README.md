@@ -1,3 +1,3 @@
 # cli-taskmanager-go
 
-A task manager accessible through CLI built using go, bolt, cobra
+A CLI based task manager built using go, bolt, cobra
