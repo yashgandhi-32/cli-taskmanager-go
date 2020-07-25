@@ -23,9 +23,9 @@ var listCmd = &cobra.Command{
 			fmt.Print("You have no task")
 			return
 		}
-		fmt.Print("You have following task")
+		fmt.Print("You have following task\n")
 		for i, task := range tasks {
-			fmt.Printf("%d . %s\n", i+1, task.Value)
+			fmt.Printf("%d. %s\n", i+1, task.Value)
 		}
 	},
 }
