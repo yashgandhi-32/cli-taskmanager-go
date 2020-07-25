@@ -22,7 +22,6 @@ var doCmd = &cobra.Command{
 			} else {
 				ids = append(ids, id)
 			}
-			fmt.Println(ids)
 		}
 		tasks, err := db.AllTasks()
 		if err != nil {
@@ -31,7 +30,7 @@ var doCmd = &cobra.Command{
 		}
 		for _, id := range ids {
 			if id <= 0 || id > len(tasks) {
-				fmt.Print("invalid task\n")
+				fmt.Printf("Invalid task %d\n", id)
 				continue
 			}
 			task := tasks[id-1]
